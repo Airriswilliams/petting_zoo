@@ -1,53 +1,66 @@
 class ShireHorse:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
+        self.shift = shift
         self.walking = True
         self.date_added = "4-15-21"
         
-henry = ShireHorse("Henry", "domestic pig")
+henry = ShireHorse("Henry", "domestic pig", "midday")
         
 class ClydesdaleHorse:
 
-    def __init__(self):
+    def __init__(self, name, species, shift):
         # Establish the properties of each animal
         # with a default value
-        self.name = "Clyde Drexler"
-        self.species = "domestic horse"
+        self.name = name
+        self.species = species
+        self.shift = shift
         self.walking = True
         self.date_added =  "4-15-21"
+        
+clyde_drexler = ClydesdaleHorse("Clyde Drexler", "horse", "midday")
 class TamworthPig:
 
-    def __init__(self):
+    def __init__(self,name, species, shift):
         # Establish the properties of each animal
         # with a default value
-        self.name = "Tammy"
-        self.species = "domestic pig"
+        self.name = name
+        self.species = species
+        self.shift = shift
         self.walking = True
         self.date_added =  "4-15-21"
+        
+tammy = TamworthPig("Tammy", "pig", "morning")
         
 class HampshirePig:
 
-    def __init__(self):
+    def __init__(self,name, species, shift):
         # Establish the properties of each animal
         # with a default value
-        self.name = "Hammy"
-        self.species = "domestic pig"
+        self.name = name
+        self.species = species
+        self.shift = shift
         self.walking = True
         self.date_added =  "4-15-21"
         
+hammy = HampshirePig("Hammy", "pig", "lateday")
+        
 class Llama:
 
-    def __init__(self):
+    def __init__(self,name, species, shift):
         # Establish the properties of each animal
         # with a default value
-        self.name = "Miss Fuzz"
-        self.species = "domestic llama"
+        self.name = name
+        self.species = species
+        self.shift = shift
         self.walking = True
         self.date_added =  "4-15-21"
+        
+miss_fuzz = Llama("Miss Fuzz","domestic llama", "lateday")
         
 class Rattlesnake:
     
@@ -143,10 +156,10 @@ class Pumpkinseed:
         self.date_added =  "4-15-21"
         
 # golden_beauty = ShireHorse()
-winners_circle = ClydesdaleHorse()
-hampton =TamworthPig()
-steward = HampshirePig()
-miss_fuzz = Llama()
+# winners_circle = ClydesdaleHorse()
+# hampton =TamworthPig()
+# steward = HampshirePig()
+# miss_fuzz = Llama()
 sneaky_steve = Rattlesnake()
 slither_sam = RoughGreenSnake()
 cobra_kris = MilkSnake()
