@@ -1,5 +1,4 @@
 from datetime import date
-from unicodedata import name
 
 class ShireHorse:
 
@@ -34,6 +33,7 @@ class ClydesdaleHorse:
         self.food = food
         
 clyde_drexler = ClydesdaleHorse("Clyde Drexler", "horse", "midday", "Horse Chow")
+
 class TamworthPig:
 
     def __init__(self,name, species, shift, food):
@@ -78,11 +78,17 @@ miss_fuzz = Llama("Miss Fuzz","domestic llama", "lateday", "Llama Chow")
         
 class Rattlesnake:
     
-    def __init__(self):
-        self.name = "Ricky Ratler"
-        self.species = "snake"
+    def __init__(self,name, species, shift, food):
+        self.name = name
+        self.species = species
+        self.shift = shift
         self.slithering = True
         self.date_added =  date.today()
+        self.food = food
+ 
+ricky_ratler = Rattlesnake("Ricky Ratler", "snake", "midday", "Mice")       
+        
+
         
 class RoughGreenSnake:
     
@@ -174,7 +180,7 @@ class Pumpkinseed:
 # hampton =TamworthPig()
 # steward = HampshirePig()
 # miss_fuzz = Llama()
-sneaky_steve = Rattlesnake()
+# sneaky_steve = Rattlesnake()
 slither_sam = RoughGreenSnake()
 cobra_kris = MilkSnake()
 mister_slither = GopherSnake()
@@ -184,11 +190,3 @@ tyson = Mallard()
 ricky_rainbow = RainbowTrout()
 bary_blue = Bluegrill()
 nate_rob = Pumpkinseed()
-
-print(nate_rob)
-
-
-
-
-        
-
