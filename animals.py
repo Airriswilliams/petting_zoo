@@ -1,66 +1,73 @@
+from datetime import date
+
 class ShireHorse:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.shift = shift
         self.walking = True
-        self.date_added = "4-15-21"
+        self.date_added = date.today()
+        self.food = food
         
-henry = ShireHorse("Henry", "domestic pig", "midday")
+henry = ShireHorse("Henry", "domestic pig", "midday", "Horse Chow")
         
 class ClydesdaleHorse:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.shift = shift
         self.walking = True
-        self.date_added =  "4-15-21"
+        self.date_added = date.today()
+        self.food = food
         
-clyde_drexler = ClydesdaleHorse("Clyde Drexler", "horse", "midday")
+clyde_drexler = ClydesdaleHorse("Clyde Drexler", "horse", "midday", "Horse Chow")
 class TamworthPig:
 
-    def __init__(self,name, species, shift):
+    def __init__(self,name, species, shift, food):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.shift = shift
         self.walking = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
+        self.food = food
         
-tammy = TamworthPig("Tammy", "pig", "morning")
+tammy = TamworthPig("Tammy", "pig", "morning", "Pig Slaw")
         
 class HampshirePig:
 
-    def __init__(self,name, species, shift):
+    def __init__(self,name, species, shift, food):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.shift = shift
         self.walking = True
-        self.date_added =  "4-15-21"
+        self.date_added = date.today()
+        self.food = food
         
-hammy = HampshirePig("Hammy", "pig", "lateday")
+hammy = HampshirePig("Hammy", "pig", "lateday", "Pig Slaw")
         
 class Llama:
 
-    def __init__(self,name, species, shift):
+    def __init__(self,name, species, shift, food):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.shift = shift
         self.walking = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
+        self.food = food
         
-miss_fuzz = Llama("Miss Fuzz","domestic llama", "lateday")
+miss_fuzz = Llama("Miss Fuzz","domestic llama", "lateday", "Llama Chow")
         
 class Rattlesnake:
     
@@ -68,7 +75,7 @@ class Rattlesnake:
         self.name = "Ricky Ratler"
         self.species = "snake"
         self.slithering = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
         
 class RoughGreenSnake:
     
@@ -76,7 +83,7 @@ class RoughGreenSnake:
         self.name = "Jake"
         self.species = "snake"
         self.slithering = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
         
 class MilkSnake:
     
@@ -84,7 +91,7 @@ class MilkSnake:
         self.name = "Milky"
         self.species = "snake"
         self.slithering = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
         
 class GopherSnake:
     
@@ -92,7 +99,7 @@ class GopherSnake:
         self.name = "Gerald Gopher"
         self.species = "snake"
         self.slithering = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
         
 class GreenSnake:
     
@@ -100,7 +107,7 @@ class GreenSnake:
         self.name = "Mister Green"
         self.species = "snake"
         self.slithering = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
         
         
         
@@ -112,7 +119,7 @@ class Goldfish:
         self.name = "Goldy"
         self.species = "fish"
         self.swimming = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
         
 class Mallard:
 
@@ -122,7 +129,7 @@ class Mallard:
         self.name = "Mason"
         self.species = "fish"
         self.swimming = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
         
 class RainbowTrout:
 
@@ -132,7 +139,7 @@ class RainbowTrout:
         self.name = "Lucky Charm"
         self.species = "fish"
         self.swimming = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
         
 class Bluegrill:
 
@@ -142,7 +149,7 @@ class Bluegrill:
         self.name = "Bishop Blue"
         self.species = "fish"
         self.swimming = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
         
         
 class Pumpkinseed:
@@ -153,7 +160,7 @@ class Pumpkinseed:
         self.name = "Patrick"
         self.species = "fish"
         self.swimming = True
-        self.date_added =  "4-15-21"
+        self.date_added =  date.today()
         
 # golden_beauty = ShireHorse()
 # winners_circle = ClydesdaleHorse()
