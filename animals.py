@@ -1,4 +1,5 @@
 from datetime import date
+from unicodedata import name
 
 class ShireHorse:
 
@@ -13,6 +14,12 @@ class ShireHorse:
         self.food = food
         
 henry = ShireHorse("Henry", "domestic pig", "midday", "Horse Chow")
+
+def feed(self):
+    print(f'{self.name} was fed {self.food} on {self.today().strftime("%m/%d/%Y")}')
+    
+def __str__(self):
+    return f"{self.name} is a {self.species}"
         
 class ClydesdaleHorse:
 
