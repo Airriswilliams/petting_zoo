@@ -5,15 +5,26 @@ from datetime import date
 
 class Rattlesnake:
     
-    def __init__(self,name, species, shift, food):
+    def __init__(self,name, species, shift, food, chip_num):
         self.name = name
         self.species = species
         self.shift = shift
+        self.food = food
+        self.__chip_number = chip_num
         self.slithering = True
         self.date_added =  date.today()
-        self.food = food
+        
+    @property
+    def chip_number(self):
+        return self.__chip_number
+    
+    @chip_number.setter
+    def chip_number(self,num):
+        pass
  
-ricky_ratler = Rattlesnake("Ricky Ratler", "snake", "midday", "Mice")       
+ricky_ratler = Rattlesnake("Ricky Ratler", "snake", "midday", "Mice", 12345) 
+print(ricky_ratler.chip_number)      
+
         
 
         

@@ -14,7 +14,7 @@ class ShireHorse:
         self.date_added = date.today()
         self.food = food
         
-henry = ShireHorse("Henry", "domestic pig", "midday", "Horse Chow")
+henry = ShireHorse("Henry", "horse", "midday", "Horse Chow")
 
 def feed(self):
     print(f'{self.name} was fed {self.food} on {self.today().strftime("%m/%d/%Y")}')
